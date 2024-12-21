@@ -1,4 +1,4 @@
-app-id: io.github.softfever.OrcaSlicer
+app-id: com.elementfoundry.OrcaSlicer
 runtime: org.gnome.Platform
 runtime-version: "46"
 sdk: org.gnome.Sdk
@@ -7,7 +7,7 @@ separate-locales: true
 rename-icon: OrcaSlicer 
 finish-args:
   - --share=ipc
-  - --socket=x11
+  - --socket=fallback-x11
   - --share=network
   - --device=all
   - --filesystem=home
@@ -307,7 +307,7 @@ modules:
 
       # AppData metainfo for Gnome Software & Co.
       - type: file
-        path: io.github.softfever.OrcaSlicer.metainfo.xml
+        path: com.elementfoundry.OrcaSlicer.metainfo.xml
 
       # start-up script
       - type: file
